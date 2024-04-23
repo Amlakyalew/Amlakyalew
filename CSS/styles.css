@@ -619,11 +619,11 @@ a {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 4rem;
     margin: 0 auto;
-   
 }
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
