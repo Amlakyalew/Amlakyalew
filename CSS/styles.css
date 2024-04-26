@@ -112,6 +112,10 @@ a {
     font-size: 2rem;
 }
 
+.list .point {
+    cursor: pointer;
+}
+
 .badge--primary {
     background: var(--color-primary);
     color: #fff;
@@ -300,10 +304,13 @@ a {
 
 .input--group .input {
     flex-grow: 1;
+    width: 0;
 }
 
 .input--group .btn {
-    margin: 4px 0;
+    margin: .5rem 2vw;
+    margin-left: 0;
+    margin-right: 0;
 }
 @media screen and (min-width: 1024px) {
    .input{
@@ -492,6 +499,7 @@ a {
 
 .grid {
     display: grid;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -514,7 +522,7 @@ a {
     position: relative;
 }
 
-.testimonial__image > img {
+.testimonial__image .happy__image {
     width: 100%;
 }
 
@@ -522,6 +530,10 @@ a {
     position: absolute;
     top: 2rem;
     right: -32px;
+}
+
+.happy {
+    margin-bottom: 20rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -538,7 +550,9 @@ a {
 
 .callout {
    padding: 4rem;
-   border-radius: 5px;
+   border-radius: 2rem;
+   max-width: 90vw;
+   margin: 0 auto;
 }
 
 .callout--primary {
@@ -740,7 +754,7 @@ a {
     }
     
     .hero__content {
-        text-align: left;
+        text-align: center;
         align-self: center;
     }
 }
@@ -755,7 +769,7 @@ a {
 
 .block-domain__prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-weight: 600;
     font-size: 2rem;
@@ -801,8 +815,10 @@ a {
 }
 
 .feature__heading {
-    margin-top: 1rem 0;
+    margin: 0;
+    text-align: left;
 }
+
 
 @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content {
@@ -810,10 +826,19 @@ a {
     }
 }
 
+
+
+
 /* Showcase Block */
 
 .block-showcase__image > img {
     width: 100%;
+}
+
+.callout {
+    position: absolute;
+    top: -103px;
+    margin: 0 20vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -836,11 +861,16 @@ a {
 
 
 
+.center {
+    position: relative;
+}
+
 
 /* Footer */
 
 .footer {
     background: #232323;
+    padding-top: 60rem;
 }
 
 .footer a {
@@ -884,6 +914,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .footer {
+        padding-top: 70rem;
+    }
+
     .footer__sections {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
